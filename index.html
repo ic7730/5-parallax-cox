@@ -15,60 +15,85 @@
         <!-- local w3.css -->
         <link rel=stylesheet href="css/style.css">
 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <body>
 
-    </head>
-    <body>
-        
-        <!-- nav bar -->
-        
-        
-        <div class="w3-bar w3-red">
-            <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small">Skiing</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small">Hiking+Biking</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small">Travel</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-        </div>
+            <!-- color theme -->
 
-        <div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
-            <a href="#bgimg-1" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#bgimg-2" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#bgimg-3" class="w3-bar-item w3-button">Link 3</a>
-        </div>
+            <style>
+
+                .w3-theme {color:#fff !important;background-color:#a7c83c !important}
+                .w3-theme-light {color:#000 !important;background-color:#e8eaf6 !important}
+                .w3-theme-dark {color:#fff !important;background-color:#1a237e !important}
+
+                .w3-theme-l5 {color:#000 !important;background-color:#e8eaf6 !important}
+                .w3-theme-l4 {color:#000 !important;background-color:#c5cae9 !important}
+                .w3-theme-l3 {color:#000 !important;background-color:#9fa8da !important}
+                .w3-theme-l2 {color:#fff !important;background-color:#7986cb !important}
+                .w3-theme-l1 {color:#fff !important;background-color:#5c6bc0 !important}
+                .w3-theme-d1 {color:#fff !important;background-color:#3949ab !important}
+                .w3-theme-d2 {color:#fff !important;background-color:#303f9f !important}
+                .w3-theme-d3 {color:#fff !important;background-color:#283593 !important}
+                .w3-theme-d4 {color:#fff !important;background-color:#1a237e !important}
+
+                .w3-theme-action {color:#fff !important;background-color:#311b92 !important}
+                .w3-text-theme {color:#1a237e !important}
+
+            </style>
 
 
+            </head>
+        <body>
+
+            <!-- nav bar -->
 
 
-        <div class="bgimg-1">
-            <div class="caption">
-                <span class="border">About Me</span>
+            <div class="w3-bar w3-green">
+                <a href="#me" class="w3-bar-item w3-button">About me</a>
+                <a href="#ski" class="w3-bar-item w3-button w3-hide-small">Skiing</a>
+                <a href="#hikeandbike" class="w3-bar-item w3-button w3-hide-small">Hiking+Biking</a>
+                <a href="#travel" class="w3-bar-item w3-button w3-hide-small">Travel</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
             </div>
-        </div>
 
-        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-            <h3 style="text-align:center;">Ian Cox</h3>
-            <p>My name is Ian and I am a 14 year old living in Andover, Massachusetts. I attend to Andover High school and I have many hobbies such as skiing, hiking, biking, and travelling. </p>
-        </div>
-
-        <div class="bgimg-2">
-            <div class="caption">
-                <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Skiing</span>
+            <div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+                <a href="#bgimg-1" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#bgimg-2" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#bgimg-3" class="w3-bar-item w3-button">Link 3</a>
             </div>
-        </div>
 
 
-        <div style="position:relative;">
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-                <p>I ski at many mountains throughout the winter, and it is a huge hobby of mine. Starting in the state of Vermont, I ski at Killington, Okemo, and Stratton. In New Hampshire, I ski at Loon and Bretton Woods. In Canada, Mont-Tremblant, and in California, Squaw Valley. I learned how to ski around the age of 3. </p>
 
-                <!--Start of modal -->
 
-                <!DOCTYPE html>
-                <html>
-                    <title>W3.CSS</title>
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-                    <body>
+            <div class="bgimg-1" id="me">
+                <div class="caption">
+                    <span class="border">About Me</span>
+                </div>
+            </div>
+
+            <div style="color: #777;background-color:#a7c83c;text-align:center;padding:50px 80px;text-align: justify;">
+                <h3 style="text-align:center;">Ian Cox</h3>
+                <p>My name is Ian and I am a 14 year old living in Andover, Massachusetts. I was born near and grew up in Arlington Massachusetts, and moved to Andover when I was about 6. I attend to Andover High school and I have many hobbies such as skiing, hiking, biking, and travelling. </p>
+            </div>
+
+            <div class="bgimg-2" id="ski">
+                <div class="caption">
+                    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Skiing</span>
+                </div>
+            </div>
+
+
+            <div style="position:relative">
+                <div style="color:#fff;background-color:#a7c83c;text-align:center;padding:50px 80px;text-align: justify;">
+                    <p>I ski at many mountains throughout the winter, and it is a huge hobby of mine. Starting in the state of Vermont, I ski at Killington, Okemo, and Stratton. In New Hampshire, I ski at Loon and Bretton Woods. In Canada, Mont-Tremblant, and in California, Squaw Valley. I learned how to ski around the age of 3. </p>
+
+                    <!--Start of modal -->
+
+                    <!DOCTYPE html>
+                    <html>
+                        <title>W3.CSS</title>
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
                         <center>
 
@@ -107,8 +132,8 @@
                             </div>
                         </center>
 
-                    </body>
-                </html>
+                        </body>
+                    </html> 
 
 
 
@@ -133,28 +158,28 @@
 
 
 
-        </div>
+            </div>
 
-        <div class="bgimg-3">
+        <div class="bgimg-3" id="hikeandbike">
             <div class="caption">
                 <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Hiking+Biking</span>
             </div>
         </div>
 
         <div style="position:relative;">
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <div style="color:#ddd;background-color:#a7c83c;text-align:center;padding:50px 80px;text-align: justify;">
                 <p>I have hiked about half of the 48, 4000 footer mountains in new hampshire and almost all of the ones in Vermont. When I complete those, I will move on to the bigger mountains of New Hampshire, and continue the Adirondacks of New York. I love to mountain bike and I bike in Herold Parker State Forest in Andover.   </p>
             </div>
         </div>
 
-        <div class="bgimg-4">
+        <div class="bgimg-4" id="travel">
             <div class="caption">
                 <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Travel</span>
             </div>
         </div>
 
         <div style="position:relative;">
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <div style="color:#ddd;background-color:#a7c83c;text-align:center;padding:50px 80px;text-align: justify;">
                 <p>I want to travel the world and I have already covered some countries. I have been to Aruba, Panama, Costa Rica, Canada, and this summer I will be going to many places in Europe. These include England, Ireland, Italy and more! Hopefully I continue to travel and tour the countries all around me on our planet. </p>
             </div>
         </div>
@@ -165,7 +190,7 @@
             </div>
         </div>
 
-    </body>
+        </body>
 
 
 </html>
